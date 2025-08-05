@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://devdatta-mahesh-joshi.github.io/sitemap.xml
