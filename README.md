@@ -21,7 +21,7 @@ CNAME                   custom domain: devdattajoshi.com
 
 ## Editing
 
-- **Resume content:** edit the matching `<section>` in `index.html`. Each job is an `<li>` in the experience `<ol class="tree">`.
+- **Resume content:** edit the matching `<section>` in `index.html`. Each section is a `.pane`; each job/project is an `<article class="job">`.
 - **Colours:** change the variables in `:root` (dark) and the two light-theme blocks in `style.css`.
 - **Shell commands:** add one to the `COMMANDS` object in `assets/js/main.js`.
 - After changing CSS or JS, bump `VERSION` in `sw.js` so returning visitors get the new files offline too.

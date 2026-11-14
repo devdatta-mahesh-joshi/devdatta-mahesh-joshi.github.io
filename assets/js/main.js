@@ -42,7 +42,7 @@
 
   /* ---------- highlight the tab of the section in view ---------- */
 
-  var tabs = document.querySelectorAll('.tabs a');
+  var tabs = document.querySelectorAll('.tabs a[href^="#"]');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
@@ -72,7 +72,7 @@
     linkedin: 'https://www.linkedin.com/in/devdatta-joshi-007/',
     email: 'mailto:devdattaj007@gmail.com'
   };
-  var SECTIONS = ['about', 'experience', 'education', 'skills', 'projects', 'contact'];
+  var SECTIONS = ['about', 'skills', 'experience', 'projects', 'education', 'contact'];
 
   function line(text, cls) {
     var p = document.createElement('p');

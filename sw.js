@@ -1,6 +1,6 @@
 // Network-first service worker: always tries to fetch the latest site,
 // falls back to the cached copy when offline. Bump VERSION to drop old caches.
-var VERSION = 'v1';
+var VERSION = 'v3';
 var CORE = ['/', '/assets/css/style.css', '/assets/js/main.js', '/assets/img/favicon.svg', '/404.html'];
 
 self.addEventListener('install', function (e) {
