@@ -73,7 +73,7 @@
     email: 'mailto:devdattaj007@gmail.com',
     resume: '/assets/files/Devdatta_Mahesh_Joshi_Resume.pdf'
   };
-  var SECTIONS = ['about', 'experience', 'projects', 'skills', 'education', 'contact'];
+  var SECTIONS = ['about', 'skills', 'experience', 'projects', 'education', 'contact'];
 
   function line(text, cls) {
     var p = document.createElement('p');
