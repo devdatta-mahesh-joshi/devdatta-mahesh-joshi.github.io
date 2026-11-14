@@ -13,7 +13,6 @@ index.html              the whole site (resume content lives here)
 assets/css/style.css    terminal theme; colours are CSS variables at the top (dark + light)
 assets/js/main.js       theme toggle, interactive shell commands, service worker registration
 assets/img/             favicon, Android/iOS icons, social preview image
-assets/files/           downloadable resume PDF (replace the file, keep the name)
 manifest.webmanifest    makes the site installable on Android ("Add to Home screen")
 sw.js                   network-first service worker (offline fallback)
 CNAME                   custom domain: devdattajoshi.com

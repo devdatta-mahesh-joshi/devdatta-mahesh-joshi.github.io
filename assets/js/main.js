@@ -70,8 +70,7 @@
   var LINKS = {
     github: 'https://github.com/devdatta-mahesh-joshi',
     linkedin: 'https://www.linkedin.com/in/devdatta-joshi-007/',
-    email: 'mailto:devdattaj007@gmail.com',
-    resume: '/assets/files/Devdatta_Mahesh_Joshi_Resume.pdf'
+    email: 'mailto:devdattaj007@gmail.com'
   };
   var SECTIONS = ['about', 'skills', 'experience', 'projects', 'education', 'contact'];
 
@@ -117,7 +116,6 @@
     github: { desc: 'open GitHub profile', run: function () { line('opening github…'); open(LINKS.github); } },
     linkedin: { desc: 'open LinkedIn profile', run: function () { line('opening linkedin…'); open(LINKS.linkedin); } },
     email: { desc: 'send an email', run: function () { line('opening mail client…'); open(LINKS.email); } },
-    resume: { desc: 'download resume (PDF)', run: function () { line('downloading resume.pdf…'); open(LINKS.resume); } },
     theme: { desc: 'theme [light|dark|auto]', run: function (a) {
       var t = a[0];
       if (!t) t = effectiveTheme() === 'dark' ? 'light' : 'dark';
@@ -178,7 +176,7 @@
     }
   });
 
-  ['help', 'ls', 'experience', 'resume', 'github', 'theme', 'clear'].forEach(function (c) {
+  ['help', 'ls', 'experience', 'skills', 'github', 'theme', 'clear'].forEach(function (c) {
     var b = document.createElement('button');
     b.type = 'button';
     b.textContent = c;

@@ -261,8 +261,6 @@ h1 {
 .btn-primary { border-color: var(--green); color: var(--green); font-weight: 600; }
 .btn-primary:hover { border-color: var(--green); background: var(--sel); }
 
-.tabs .tab-dl { margin-left: auto; color: var(--green); }
-.tabs .tab-dl::before { content: "↓ "; }
 
 /* ---------- skills ---------- */
 
