@@ -13,6 +13,7 @@ index.html              the whole site (resume content lives here)
 assets/css/style.css    terminal theme; colours are CSS variables at the top (dark + light)
 assets/js/main.js       theme toggle, interactive shell commands, service worker registration
 assets/img/             favicon, Android/iOS icons, social preview image
+assets/files/           downloadable resume PDF (replace the file, keep the name)
 manifest.webmanifest    makes the site installable on Android ("Add to Home screen")
 sw.js                   network-first service worker (offline fallback)
 CNAME                   custom domain: devdattajoshi.com
@@ -21,7 +22,7 @@ CNAME                   custom domain: devdattajoshi.com
 
 ## Editing
 
-- **Resume content:** edit the matching `<section>` in `index.html`. Each job is an `<li>` in the experience `<ol class="tree">`.
+- **Resume content:** edit the matching `<section>` in `index.html`. Each section is a `.pane`; each job/project is an `<article class="job">`.
 - **Colours:** change the variables in `:root` (dark) and the two light-theme blocks in `style.css`.
 - **Shell commands:** add one to the `COMMANDS` object in `assets/js/main.js`.
 - After changing CSS or JS, bump `VERSION` in `sw.js` so returning visitors get the new files offline too.
